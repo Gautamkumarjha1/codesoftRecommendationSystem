@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Book Recommender</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Book Recommender</h1>
+
+    <label>Select your favorite genres:</label>
+    <div class="genres">
+      <label><input type="checkbox" value="Fantasy"> Fantasy</label>
+      <label><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+      <label><input type="checkbox" value="Romance"> Romance</label>
+      <label><input type="checkbox" value="Mystery"> Mystery</label>
+      <label><input type="checkbox" value="Non-fiction"> Non-fiction</label>
+    </div>
+
+    <button onclick="getRecommendations()">Get Recommendations</button>
+
+    <h2>Recommended Books:</h2>
+    <ul id="recommendations"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
